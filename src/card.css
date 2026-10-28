@@ -1,0 +1,34 @@
+.card {
+    display:grid;
+    grid-template-columns: 100%;
+    height: var(--card-size);
+    width: var(--card-size);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    grid-area: 1 / 1;
+}
+
+.card .hover-img {
+    opacity: 0;
+}
+
+.card:hover img:not(.hover-img) {
+    opacity: 0;
+}
+
+.card:hover .hover-img {
+    opacity: 1;
+}
+
+.card-text {
+    grid-area: 1 / 1;
+    align-self: center;
+    text-align: center;
+    margin: 0 2% 0 0;
+    padding: 0 5%;
+    font-size: calc(var(--card-size) * 0.13);
+    user-select: none;
+}
