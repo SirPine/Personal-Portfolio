@@ -1,12 +1,15 @@
 import './card.css'
+import card from "./assets/card.png"
+import cardHover from "./assets/card-hover.png"
+import { Link } from 'react-router'
 
 function Card(props) {
   return (
-    <a className ="card" href={props.link} draggable="false" style={{ '--card-size': '256px' }}>
-      <img src="public/card.png" draggable={false} />
-      <img src="/card-hover.png" alt="" draggable={false} className="hover-img" />
+    <Link className ="card" to={props.link} draggable="false" style={{ '--card-size': '200px' }}>
+      <img src={card} draggable={false} />
+      <img src={cardHover} alt="" draggable={false} className="hover-img" />
       <p className="card-text">{props.description}</p>
-    </a>
+    </Link>
   );
 }
 

@@ -4,6 +4,9 @@
     height: var(--card-size);
     width: var(--card-size);
     overflow: hidden;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
 .card img {
@@ -30,5 +33,5 @@
     margin: 0 2% 0 0;
     padding: 0 5%;
     font-size: calc(var(--card-size) * 0.13);
-    user-select: none;
+    user-select: none;    
 }
